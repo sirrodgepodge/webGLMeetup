@@ -6,7 +6,7 @@
   <canvas id="webgl-canvas"></canvas>
   <!-- runs once per vertex -->
   <!-- the 4th value in position is for something called homogenous coordinates -->
-  <!-- swizzling is the name for taking out parts of the vector with shorthand, positon.xxx -->
+  <!-- swizzling is the term for taking out parts of the vector with shorthand, positon.xxx -->
   <script type="shader/vertex" id="vs">
     attribute vec4 color;
     attribute vec4 position;
@@ -84,6 +84,7 @@
     // webgl does check the number of arguments you have
     gl.useProgram(program);
 
+    // attempting to center the rotation of an equilateral triangle
     function degreesToRadians(deg) {
       return deg * Math.PI/180;
     }
